@@ -1,0 +1,44 @@
+# Local academic paper, datasets, & Python workspace (kept local, excluded from GitHub)
+paper/
+
+# Android / Gradle build artifacts & local environment config
+qiblaku-app/.gradle/
+qiblaku-app/.kotlin/
+qiblaku-app/local.properties
+qiblaku-app/build/
+qiblaku-app/app/build/
+*.apk
+*.aab
+*.ap_
+*.jks
+*.keystore
+*.hprof
+
+# Third-party APKs, extracted binaries, notices, & unrelated decompiled packages;
+# whitelist only the specific disassembly & compass-sensor RE evidence files.
+re/masa/*
+!re/masa/disasm_qibla.txt
+!re/masa/jadx/
+re/masa/jadx/*
+!re/masa/jadx/sources/
+re/masa/jadx/sources/*
+!re/masa/jadx/sources/p134n8/
+re/masa/jadx/sources/p134n8/*
+!re/masa/jadx/sources/p134n8/a.java
+!re/masa/jadx/sources/p134n8/b.java
+
+re/nu_online/*
+!re/nu_online/disasm_qibla.txt
+!re/nu_online/jadx/
+re/nu_online/jadx/*
+!re/nu_online/jadx/sources/
+re/nu_online/jadx/sources/*
+!re/nu_online/jadx/sources/R5/
+re/nu_online/jadx/sources/R5/*
+!re/nu_online/jadx/sources/R5/a.java
+!re/nu_online/jadx/sources/R5/b.java
+
+# OS / Editor files
+.DS_Store
+.idea/
+*.iml
