@@ -1,6 +1,6 @@
-# QiblaKu — Aplikasi Pengukur Kiblat 50 Hz & Bukti Reverse Engineering
+# QiblaKu — Aplikasi Pengukur Kiblat 50 Hz, Paper PDF, & Bukti Reverse Engineering
 
-Repositori ini berisi kode sumber aplikasi Android **QiblaKu** (`com.ireddragonicy.qiblaku`) beserta artefak bukti *reverse engineering* terhadap aplikasi kompas kiblat **MASA** (`com.labmu.masa` v2.10.1) dan **NU Online** (`id.or.nu.app` v2.29.0).
+Repositori ini berisi naskah akhir **Paper PDF**, kode sumber aplikasi Android **QiblaKu** (`com.ireddragonicy.qiblaku`), serta artefak bukti *reverse engineering* terhadap aplikasi kompas kiblat **MASA** (`com.labmu.masa` v2.10.1) dan **NU Online** (`id.or.nu.app` v2.29.0).
 
 ---
 
@@ -8,9 +8,10 @@ Repositori ini berisi kode sumber aplikasi Android **QiblaKu** (`com.ireddragoni
 
 | Direktori / Berkas | Deskripsi |
 |---|---|
-| [`qiblaku-app/`](qiblaku-app/) | Aplikasi Android *native* (Kotlin, Jetpack Compose, `minSdk 26`, `targetSdk 36`) untuk perhitungan kiblat geodesik **WGS84 (Vincenty)** dan model bola pembanding, koreksi deklinasi **WMM (`GeomagneticField`)**, kompas fusi **9-DoF** vs 6-DoF/LPF, serta perekaman telemetri IMU **CSV 50 Hz**. |
+| [`paper/Paper_Analisis_Arah_Kiblat_UAD.pdf`](paper/Paper_Analisis_Arah_Kiblat_UAD.pdf) | Naskah akhir paper 5 halaman mengenai evaluasi akurasi arah kiblat Masjid Kampus 1–5 UAD berbasis telemetri sensor IMU 50 Hz dan rekayasa balik aplikasi mobile (*source pembuatan paper tidak disertakan, hanya PDF final*). |
+| [`qiblaku-app/`](qiblaku-app/) | Aplikasi Android *native* (Kotlin, Jetpack Compose, `minSdk 26`, `targetSdk 36`) untuk perhitungan kiblat geodesik **WGS84 (Vincenty)** dan model bola pembanding, koreksi deklinasi **WMM (`GeomagneticField`)**, kompas fusi **9-DoF** vs 6-DoF/LPF, serta perekam telemetri IMU **CSV 50 Hz**. |
 | [`re/`](re/) | Ringkasan analisis & artefak bukti teknis *reverse engineering* MASA vs NU Online: [`re/README.md`](re/README.md), disassembly ARM64 Dart AOT (`disasm_qibla.txt`), dan kelas Java pembacaan sensor kompas Android (`p134n8/a.java`, `p134n8/b.java`, `R5/a.java`, `R5/b.java`). |
-| [`LICENSE`](LICENSE) | Lisensi MIT untuk kode sumber proyek dan dokumentasi analisis. |
+| [`LICENSE`](LICENSE) | Lisensi MIT untuk kode sumber proyek, paper PDF, dan dokumentasi analisis. |
 
 ---
 
@@ -46,4 +47,4 @@ cd qiblaku-app
 
 ## Lisensi
 
-Seluruh kode sumber aplikasi dan catatan teknis pada repositori ini dirilis di bawah **MIT License** — lihat [`LICENSE`](LICENSE). Berkas biner aplikasi pihak ketiga yang dianalisis tetap menjadi hak milik pengembang masing-masing dan tidak didistribusikan dalam repositori ini.
+Seluruh kode sumber aplikasi, naskah PDF, dan catatan teknis pada repositori ini dirilis di bawah **MIT License** — lihat [`LICENSE`](LICENSE). Berkas biner aplikasi pihak ketiga yang dianalisis tetap menjadi hak milik pengembang masing-masing dan tidak didistribusikan dalam repositori ini.

@@ -1,5 +1,6 @@
-# Local academic paper, datasets, & Python workspace (kept local, excluded from GitHub)
-paper/
+# Track ONLY the compiled final PDF inside paper/; ignore all local sources, datasets, photos, & build caches
+paper/*
+!paper/Paper_Analisis_Arah_Kiblat_UAD.pdf
 
 # Android / Gradle build artifacts & local environment config
 qiblaku-app/.gradle/
